@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>Unity Roleplay</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/* css for navigation bar */
+.navigation{
+    width: 100%;
+    /* border: 2px solid rgb(0, 0, 0); */
+    padding: 4px 0 0 63px;;
+    background-color: #bc7c82;
+    position: fixed;
+    z-index: +1;
+}
+.navbar{
+    color: white;
+    padding:0 18px ;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    top: -20px;
+    font-weight: 900;
+}
+.navbar:hover{
+    color: rgb(240, 159, 170);
+}
+#home{
+    padding-left: 900px;
+}
+
+/* css for container */
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* css for home */
+.home{
+    /* border: 2px solid black; */
+    width: 100%;
+    background-image: url(bgimg.jpg);
+    background-color: #cccccc;
+    height: 760px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    z-index: -1;    
+}
+.heading{
+    width: 28%;
+    padding: 10px;
+    margin: 220px 0 0 150px;
+    font-family: 'Piedra', cursive;
+    font-size: 80px;
+}
+
+/* css for rules */
+.rules{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    grid-column: 1 / span 2;
+}
+.rules p{
+    font-size: 50px;    
+    padding: 48px 586px 0 586px;
+}
+.rules button{
+    color: white;
+    background-color: rgb(122, 21, 38);
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px 0 0 700px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* css for form */
+.form{
+    background-color: rgb(212, 212, 212);
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 51px 178px;
+    height: 327px;
+    grid-column: 1 / span 2;
+}
+td{
+    color: white;
+    /* border: 1px solid    black; */
+    padding: 10px 49px;
+    font-size: 18px;
+}
+#sym{
+    font-size: 40px;
+}
+#pd{
+    background-color: dodgerblue;
+    opacity: 0.8;
+}
+#em{
+    background-color: red;
+    opacity: 0.8;
+}
+#sta{
+    background-color: forestgreen;
+    opacity: 0.8;
+}
+table a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Piedra', cursive    
+}
+
+/* CSS FOR contact */
+.contact{
+    border: 2px solid black;
+    height: 350px;
+    grid-column: 1 / span 2;
+    padding: 10px;
+    background-color: #171717; 
+}
+.contact a {
+    text-decoration: none;
+}
+.contact a h1{
+    float: right;
+    color: #798eff;
+    margin: 102px 257px 0px 0px;
+    font-size: 70px;
+    width: 33%;
+}
+.contact img{
+    width: 350px;
+    margin-left: 400px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <img src="UnityRolePlay.jpg" style="width: 50px;" alt="logo could not load">
+        <a href="#home" id="home" class="navbar">HOME</a>
+        <a href="#rules" id="rules" class="navbar">RULES</a>
+        <a href="#form" id="form" class="navbar">FORM</a>
+        <a href="#contact" id="contact" class="navbar">CONTACT</a>
+        <a href="#login" id="login" class="navbar">LOGIN</a>
+    </div>
+    <div class="container">
+        <div class="home">
+            <a name="#home"></a>
+            <h1 class="heading">THE UNITY ROLEPLAY</h1>
+        </div>
+        <div class="rules">
+            <p>MAKE SURE YOU KNOW THE RULE</p>
+            <button>RULES</button>
+        </div>
+        <div class="form">
+            <div class="table">
+                <table style="border: 2px solid black; width:100%">
+                    <tr id="pd">
+                        <td id="sym">&#10031;</td>
+                        <td> <a href="#lspd">LSPD</a></td>
+                        <td>We are hiring LSPD so Join LSPD and decrease the crime in LAS SANTOS City.</td>
+                    </tr>
+                    <tr id="em">
+                        <td id="sym">&#10033;</td>
+                        <td><a href="#ems">EMS</a></td>
+                        <td>We are hiring EMS so Join EMS and help LAS SANTOS civilian.</td>
+                    </tr>
+                    <tr id="sta">
+                        <td id="sym">&#9816;</td>
+                        <td><a href="#staff">STAFF</a></td>
+                        <td>We are recruiting staff to make our server up, so make sure you fill form as soon as possible</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="https://discord.gg/wDUBGM">
+                <img src="discord.svg" alt="_blank" >
+                <h1>JOIN US ON DISCORD</h1>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
